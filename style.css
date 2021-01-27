@@ -1,0 +1,54 @@
+/* here is to reset everything  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Ariel, Arial, Helvetica, sans-serif;
+    background: #12475f;
+    color: #fff;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* for paragraph */
+.container{
+    max-width: 960px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+#showcase{
+    height: 300px;
+}
+
+#showcase h1{
+    font-size: 50px;
+    line-height: 1.7;
+    position: relative;
+    animation: heading; /* just give the animation name*/
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes heading {
+    0% {top: -50px}
+    
+    100% {top: 200px}
+}
+
+#container{
+    position: relative;
+    animation: content; /* just give the animation name*/
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes  content {
+    0% {left: -1000px;}
+    
+    100% {left: 0;}/* normal positiob*/
+}
